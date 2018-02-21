@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 46b770346ee2c5f4cbbc098aa2564c18
+timeCreated: 1518457180
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Enemy0: {fileID: 1887698225531096, guid: 672960ce9e15a234190f2e6258408a84, type: 2}
+  - Enemy1: {fileID: 1337236999453350, guid: 4b52cde87169cdb46a1687554183ea0f, type: 2}
+  - Enemy2: {fileID: 1820614864809322, guid: 4bb72683ac91d114d88d20e261f2dfe3, type: 2}
+  - Enemy3: {fileID: 1043098345229642, guid: df8d2b43f453b734cab07aa5a07b92c9, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
