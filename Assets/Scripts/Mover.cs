@@ -13,6 +13,6 @@ public class Mover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, new Vector3(20,transform.position.y,transform.position.z), MaxSpeed);
+        transform.position = Vector3.MoveTowards(transform.position, transform.position+Vector3.right, MaxSpeed);
     }
 }

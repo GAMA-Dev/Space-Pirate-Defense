@@ -12,7 +12,7 @@ public class Swipe : MonoBehaviour {
     public float smoothfactor;
     public bool useLerp;
     public bool directionChosen;
-    public int laneWidth = 10;
+    public int laneWidth = 7;
 
     private void Start()
     {
