@@ -4,7 +4,8 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
 	public float Interval = 5f;
-    public int laneWidth = 6;
+    public int laneWidth = 7;
+    public int offset = -1;
     public string enemySpawnString = "a1b2a1b3b1a2c1c2c3";
 	public GameObject Enemy0 = null;
     public GameObject Enemy1 = null;
@@ -21,7 +22,6 @@ public class Spawner : MonoBehaviour
 	void Spawn () 
 	{
         GameObject ObjToSpawn = null;
-        int spawnLane;
         if (enemySpawnPattern.MoveNext())
         {
             switch (enemySpawnPattern.Current)
@@ -45,18 +45,19 @@ public class Spawner : MonoBehaviour
             CancelInvoke("Spawn");
         }
 
+        int spawnLane;
         if (enemySpawnPattern.MoveNext())
         {
             switch (enemySpawnPattern.Current)
             {
                 case '1':
-                    spawnLane = laneWidth * 1;
+                    spawnLane = (laneWidth * 1) + offset;
                     break;
                 case '2':
-                    spawnLane = 0;
+                    spawnLane = 0 + offset;
                     break;
                 case '3':
-                    spawnLane = laneWidth * -1;
+                    spawnLane = (laneWidth * -1) + offset;
                     break;
                 default:
                     spawnLane = 0;

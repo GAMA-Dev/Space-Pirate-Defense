@@ -5,6 +5,11 @@ using UnityEngine;
 public class FireOnTouch : MonoBehaviour {
 
     public GameObject ammo;
+    private Reload reload;
+    private void Start()
+    {
+        reload = GetComponent<Reload>();
+    }
     void Update()
     {
         for (int i = 0; i < Input.touchCount; ++i)
@@ -13,10 +18,21 @@ public class FireOnTouch : MonoBehaviour {
             {
                 // Construct a ray from the current touch coordinates
                 Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
-                // Create a particle if hit
-                if (Physics.Raycast(ray))
-                    Instantiate(ammo, transform.position, transform.rotation);
+                // Create ammo instance this object is hit
+                RaycastHit raycastHit;
+                if (Physics.Raycast(ray, out raycastHit))
+                {
+                    if (raycastHit.collider.name == gameObject.name)
+                    {
+                        Debug.Log(gameObject.name + " clicked");
+                        if (reload.fireCannon())
+                        {
+                            Instantiate(ammo, transform.position + new Vector3(-3, 0, 0), transform.rotation);
+                        }
+                    }
+                }
+            }
             }
         }
     }
-}
+
