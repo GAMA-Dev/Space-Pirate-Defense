@@ -25,7 +25,7 @@ public class FireOnTouch : MonoBehaviour {
                     if (raycastHit.collider.name == gameObject.name)
                     {
                         Debug.Log(gameObject.name + " clicked");
-                        if (reload.fireCannon())
+                        if (reload.canFire())
                         {
                             Instantiate(ammo, transform.position + new Vector3(-3, 0, 0), transform.rotation);
                         }
