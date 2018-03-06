@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TargetEnemyInCollider : MonoBehaviour {
+public class FireOnEnemyInCollider : MonoBehaviour {
 
-    Reload reload;
-    GameObject target = null;
-    List<GameObject> enemiesInRange = new List<GameObject>();
+    Fire fire;
+    Transform target = null;
+    List<Transform> enemiesInRange = new List<Transform>();
     public GameObject turret;
 
 
     private void Awake()
     {
-        reload = turret.GetComponent<Reload>();
+        fire = turret.GetComponent<Fire>();
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -20,7 +20,7 @@ public class TargetEnemyInCollider : MonoBehaviour {
         if (other.CompareTag("Enemy"))
         {
             //adds this enemy to the enemy queue
-            enemiesInRange.Add(other.gameObject);
+            enemiesInRange.Add(other.transform);
             //if this object doesn't currently have a target
             if (target == null)
             {
@@ -37,7 +37,7 @@ public class TargetEnemyInCollider : MonoBehaviour {
         if (other.CompareTag("Enemy"))
         {
             //removes the enemy from the queue
-            enemiesInRange.Remove(other.gameObject);
+            enemiesInRange.Remove(other.transform);
             //if there are any other enemies in range
             if (enemiesInRange.Count > 0)
             {
@@ -58,12 +58,11 @@ public class TargetEnemyInCollider : MonoBehaviour {
         if (target)
         {
             //point turret at target
-            turret.transform.LookAt(target.transform);
+            turret.transform.LookAt(target);
             //if turret can fire
-            if (reload.canFire())
+            if (fire.canFire())
             {
-                //call fire method on any script attached to turret 
-                turret.SendMessage("fire");
+                fire.fire();
             }
         }
     }

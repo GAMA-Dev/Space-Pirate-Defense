@@ -11,11 +11,13 @@ public class Spawner : MonoBehaviour
     public GameObject Enemy1 = null;
     public GameObject Enemy2 = null;
     private System.CharEnumerator enemySpawnPattern;
+    private string theMethod = "Spawn";
 	//------------------------------
 	// Use this for initialization
 	void Start () 
 	{
-		InvokeRepeating("Spawn", 0f, Interval);
+
+		InvokeRepeating(theMethod, 0f, Interval);
         enemySpawnPattern = enemySpawnString.GetEnumerator();
     }
 	//------------------------------
@@ -42,7 +44,7 @@ public class Spawner : MonoBehaviour
         }
         else
         {
-            CancelInvoke("Spawn");
+            CancelInvoke(theMethod);
         }
 
         int spawnLane;
@@ -63,12 +65,17 @@ public class Spawner : MonoBehaviour
                     spawnLane = 0;
                     break;
             }
-            Instantiate(ObjToSpawn, new Vector3(-20, 0, spawnLane),transform.rotation);
-
+            GameObject enemy = ObjectPooler.SharedInstance.GetPooledObject(ObjToSpawn.name);
+            if (enemy != null)
+            {
+                enemy.transform.position = new Vector3(-20, 0, spawnLane);
+                enemy.transform.rotation = transform.rotation;
+                enemy.SetActive(true);
+            }
         }
         else
         {
-            CancelInvoke("Spawn");
+            CancelInvoke(theMethod);
         }
 
 

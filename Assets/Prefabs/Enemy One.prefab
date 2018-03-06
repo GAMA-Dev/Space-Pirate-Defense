@@ -38,8 +38,8 @@ GameObject:
   - component: {fileID: 4320728837662632}
   - component: {fileID: 54520198465381456}
   - component: {fileID: 136081997544725730}
-  - component: {fileID: 114640675852333418}
   - component: {fileID: 114833813362124218}
+  - component: {fileID: 114137441271089540}
   m_Layer: 0
   m_Name: Enemy One
   m_TagString: Enemy
@@ -106,7 +106,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114640675852333418
+--- !u!114 &114137441271089540
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -114,10 +114,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1887698225531096}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32a82c02fc288314c93e106ddf0147b7, type: 3}
+  m_Script: {fileID: 11500000, guid: 05401ca4283a962418ae9864b4d87d1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DestroyTime: 20
+  DeactivateTime: 20
 --- !u!114 &114833813362124218
 MonoBehaviour:
   m_ObjectHideFlags: 1

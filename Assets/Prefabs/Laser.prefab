@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4772600614001636}
   - component: {fileID: 212433319823237508}
+  - component: {fileID: 114613076771195042}
   m_Layer: 0
   m_Name: New Sprite
   m_TagString: Untagged
@@ -35,12 +36,12 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4991380493264714}
-  - component: {fileID: 114582925032826400}
   - component: {fileID: 114924165629710408}
-  - component: {fileID: 114556924506247806}
+  - component: {fileID: 136679500656388330}
+  - component: {fileID: 114463927306096050}
   m_Layer: 0
   m_Name: Laser
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52,7 +53,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1683264985889548}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4991380493264714}
@@ -72,7 +73,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114556924506247806
+--- !u!114 &114463927306096050
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -80,19 +81,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1689482388368250}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05401ca4283a962418ae9864b4d87d1c, type: 3}
+  m_Script: {fileID: 11500000, guid: 96be9e11fcb660a4a814c7427da99822, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeactivateTime: 2
---- !u!114 &114582925032826400
+--- !u!114 &114613076771195042
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1689482388368250}
+  m_GameObject: {fileID: 1683264985889548}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f8bccbf5a642ff4db5e77f233ec3cc9, type: 3}
+  m_Script: {fileID: 11500000, guid: 2f9d76f3a30bbe34999fb74653123bb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114924165629710408
@@ -107,6 +107,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxSpeed: 150
+--- !u!136 &136679500656388330
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1689482388368250}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2.5
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &212433319823237508
 SpriteRenderer:
   m_ObjectHideFlags: 1

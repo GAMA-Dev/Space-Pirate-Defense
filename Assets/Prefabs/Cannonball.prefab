@@ -21,10 +21,10 @@ GameObject:
   - component: {fileID: 4791549944885182}
   - component: {fileID: 135096684972739618}
   - component: {fileID: 114939100972982672}
-  - component: {fileID: 114308979032708106}
+  - component: {fileID: 114636919941439188}
   m_Layer: 0
   m_Name: Cannonball
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38,6 +38,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4185916380167434}
   - component: {fileID: 212289757669773418}
+  - component: {fileID: 114653764175996532}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -72,7 +73,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114308979032708106
+--- !u!114 &114636919941439188
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -80,10 +81,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1086171556279854}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05401ca4283a962418ae9864b4d87d1c, type: 3}
+  m_Script: {fileID: 11500000, guid: 96be9e11fcb660a4a814c7427da99822, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeactivateTime: 3
+--- !u!114 &114653764175996532
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1752671155360046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f9d76f3a30bbe34999fb74653123bb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114939100972982672
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -95,7 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 943de6c0c0b7e624ab99c0da17a4915a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxSpeed: 20
+  MaxSpeed: 30
 --- !u!135 &135096684972739618
 SphereCollider:
   m_ObjectHideFlags: 1
