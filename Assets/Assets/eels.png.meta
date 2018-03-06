@@ -104,7 +104,21 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 70.5, y: -4}
+        - {x: 68.5, y: -1}
+        - {x: 13.5, y: 19}
+        - {x: -22.5, y: 27}
+        - {x: -54.5, y: 27}
+        - {x: -70.5, y: 13}
+        - {x: -70.5, y: -13}
+        - {x: -58.5, y: -25}
+        - {x: -41.5, y: -26}
+        - {x: -33.5, y: -27}
+        - {x: 9.5, y: -27}
+        - {x: 15.5, y: -26}
+        - {x: 52.5, y: -21}
+        - {x: 70.5, y: -10}
       tessellationDetail: 0
     - serializedVersion: 2
       name: eels_2
@@ -118,7 +132,16 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -62, y: 26.5}
+        - {x: -70, y: 13.5}
+        - {x: -70, y: -16.5}
+        - {x: -68, y: -22.5}
+        - {x: -63, y: -26.5}
+        - {x: 17, y: -26.5}
+        - {x: 70, y: -10.5}
+        - {x: 70, y: 16.5}
+        - {x: 29, y: 26.5}
       tessellationDetail: 0
     outline: []
     physicsShape: []

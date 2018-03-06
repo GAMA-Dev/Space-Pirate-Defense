@@ -63,7 +63,7 @@ public class Spawner : MonoBehaviour
                     spawnLane = 0;
                     break;
             }
-            Instantiate(ObjToSpawn, new Vector3(-20, 0, spawnLane), Quaternion.identity);
+            Instantiate(ObjToSpawn, new Vector3(-20, 0, spawnLane),transform.rotation);
 
         }
         else

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class FireOnTouch : MonoBehaviour {
 
-    public GameObject ammo;
     private Reload reload;
     private void Start()
     {
@@ -27,7 +26,7 @@ public class FireOnTouch : MonoBehaviour {
                         Debug.Log(gameObject.name + " clicked");
                         if (reload.canFire())
                         {
-                            Instantiate(ammo, transform.position + new Vector3(-3, 0, 0), transform.rotation);
+                            SendMessage("fire");
                         }
                     }
                 }

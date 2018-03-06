@@ -16,7 +16,7 @@ public class TimedDestroy : MonoBehaviour
 	// Update is called once per frame
 	void Die () 
 	{
-		Destroy(gameObject);
+        Destroy(gameObject);
 	}
 	//------------------------------
 }
