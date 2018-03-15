@@ -54,15 +54,33 @@ public class FireOnEnemyInCollider : MonoBehaviour {
 
     private void Update()
     {
+        
         //if target is not null
         if (target)
         {
-            //point turret at target
-            turret.transform.LookAt(target);
-            //if turret can fire
-            if (fire.canFire())
+            if (target.gameObject.activeSelf)
             {
-                fire.fire();
+                //point turret at target
+                turret.transform.LookAt(target);
+                //if turret can fire
+                if (fire.canFire())
+                {
+                    fire.fire();
+                }
+            }
+            else
+            {
+                enemiesInRange.Remove(target.transform);
+                if (enemiesInRange.Count > 0)
+                {
+                    Debug.Log(enemiesInRange[0].name + " is now the target of " + gameObject.name);
+                    //retargets the enemy currently at the top of the queue
+                    target = enemiesInRange[0];
+                }
+                else
+                {
+                    target = null;
+                }
             }
         }
     }

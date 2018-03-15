@@ -7,6 +7,9 @@ public class Fire : MonoBehaviour {
     public float reloadTime;
     public bool reloading = false;
     public string AmmoName;
+    public Vector3 offset;
+    public SoundEffects SoundEffects;
+    public string soundName;
 
 
     //reload is called by the public canFire method after reloadTime is up, essentially when object is done reloading
@@ -40,9 +43,13 @@ public class Fire : MonoBehaviour {
         GameObject bullet = ObjectPooler.SharedInstance.GetPooledObject(AmmoName);
         if (bullet != null)
         {
-            bullet.transform.position = transform.position;
+            Vector3 worldOffset = transform.rotation * offset;
+            bullet.transform.position = transform.position + worldOffset;
+            //bullet.transform.position = transform.position;
+
             bullet.transform.rotation = transform.rotation;
             bullet.SetActive(true);
+            SoundEffects.playSoundEffect(soundName);
         }
     }
 

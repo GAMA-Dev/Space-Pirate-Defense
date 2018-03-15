@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Turret
   - Projectile
+  - Turret Placement
   layers:
   - Default
   - TransparentFX

@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4143632992535784}
   m_Layer: 0
-  m_Name: Energy Drop
+  m_Name: Spread
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,7 +121,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 69c8232d121e4434e9d50e4d461a1728, type: 3}
+  m_Sprite: {fileID: 21300006, guid: 60c27b88ccff5254b9fc3ad17080d687, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

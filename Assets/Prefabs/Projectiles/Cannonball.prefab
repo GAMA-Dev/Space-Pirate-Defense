@@ -21,7 +21,8 @@ GameObject:
   - component: {fileID: 4791549944885182}
   - component: {fileID: 135096684972739618}
   - component: {fileID: 114939100972982672}
-  - component: {fileID: 114636919941439188}
+  - component: {fileID: 114158015114574756}
+  - component: {fileID: 114749782987001854}
   m_Layer: 0
   m_Name: Cannonball
   m_TagString: Projectile
@@ -73,7 +74,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114636919941439188
+--- !u!114 &114158015114574756
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -81,15 +82,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 1086171556279854}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96be9e11fcb660a4a814c7427da99822, type: 3}
+  m_Script: {fileID: 11500000, guid: 5cc6161d929740744801a9e509f06f49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  colliders:
+  - Enemy
+  damageAmount: 50
 --- !u!114 &114653764175996532
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1752671155360046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f9d76f3a30bbe34999fb74653123bb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114749782987001854
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1086171556279854}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f9d76f3a30bbe34999fb74653123bb0, type: 3}
