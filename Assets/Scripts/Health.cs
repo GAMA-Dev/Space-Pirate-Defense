@@ -5,7 +5,8 @@ using UnityEngine;
 public class Health : MonoBehaviour {
 
     public int healthPoints = 100;
-
+    
+    
     public void Damage(int amount)
     {
         healthPoints -= amount;
@@ -13,6 +14,7 @@ public class Health : MonoBehaviour {
         if (healthPoints <= 0)
         {
             gameObject.SetActive(false);
+            
         }
     }
 
