@@ -13,4 +13,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: e744d87f418d2244fa32ec9c06955866, type: 3}
   characterName: John Silver
-  isSpeaking: 0

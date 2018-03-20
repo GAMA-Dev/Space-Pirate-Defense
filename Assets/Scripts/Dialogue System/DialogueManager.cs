@@ -25,8 +25,8 @@ public class DialogueManager : MonoBehaviour {
     public Text dialogueText;
 
 
-    public bool leftWillExit;
-    public bool rightWillExit;
+    private bool leftWillExit;
+    private bool rightWillExit;
 
     private void Awake()
     {
@@ -65,7 +65,6 @@ public class DialogueManager : MonoBehaviour {
                 hasNextFrame = false;
             }
             UpdateText();
-            UpdateSprites();
             UpdateAnimationParameters();
         }
     }
