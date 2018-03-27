@@ -1201,8 +1201,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 943107372}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: 1, y: 0, z: 0}
+
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2056200167}
@@ -1691,8 +1692,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1279590057}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: 1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 187356398}
@@ -1804,7 +1805,7 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
-  m_AllowMSAA: 1
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
@@ -2089,9 +2090,9 @@ MonoBehaviour:
   laneWidth: 7
   offset: -1
   enemySpawnString: a1b2a1b3b1a2c1c2c3
-  Enemy0: {fileID: 1887698225531096, guid: 672960ce9e15a234190f2e6258408a84, type: 2}
-  Enemy1: {fileID: 1887698225531096, guid: 672960ce9e15a234190f2e6258408a84, type: 2}
-  Enemy2: {fileID: 1887698225531096, guid: 672960ce9e15a234190f2e6258408a84, type: 2}
+  Enemy0: {fileID: 1521587055924198, guid: 672960ce9e15a234190f2e6258408a84, type: 2}
+  Enemy1: {fileID: 1521587055924198, guid: 672960ce9e15a234190f2e6258408a84, type: 2}
+  Enemy2: {fileID: 1521587055924198, guid: 672960ce9e15a234190f2e6258408a84, type: 2}
 --- !u!4 &1485073339
 Transform:
   m_ObjectHideFlags: 0
@@ -2272,7 +2273,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1701218520}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -2513,7 +2514,7 @@ MonoBehaviour:
       type: 2}
     amountToPool: 20
     shouldExpand: 0
-  - objectToPool: {fileID: 1887698225531096, guid: 672960ce9e15a234190f2e6258408a84,
+  - objectToPool: {fileID: 1521587055924198, guid: 672960ce9e15a234190f2e6258408a84,
       type: 2}
     amountToPool: 20
     shouldExpand: 0
