@@ -110,13 +110,13 @@ public class HealthBar : MonoBehaviour
         // determine what the current scale factor should be, based on life total. - BeWaryOfMiscreant
 
         newScaleFactor.x = scalePreserver.x;
-        newScaleFactor.y = scalePreserver.y * ((float)HealthRef.healthPoints / (float)100);
+        newScaleFactor.y = scalePreserver.y * ((float)HealthRef.currentHealthPoints / (float)100);
         newScaleFactor.z = scalePreserver.z;
 
 
 
 
-        Debug.Log("Calculating lifebar for gameObject: " + WhoseHealthExactly.GetInstanceID() + ", with health: " + HealthRef.healthPoints);
+        Debug.Log("Calculating lifebar for gameObject: " + WhoseHealthExactly.GetInstanceID() + ", with health: " + HealthRef.currentHealthPoints);
         Debug.Log("New scale: " + newScaleFactor.y);
 
         GreenBarTransform.localScale = new Vector3(newScaleFactor.x, newScaleFactor.y, newScaleFactor.z);

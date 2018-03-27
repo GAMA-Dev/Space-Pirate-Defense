@@ -4,16 +4,23 @@ using UnityEngine;
 
 public class Health : MonoBehaviour {
 
-    public int healthPoints = 100;
-    
-    
+    public int startingHealthPoints = 100;
+    public int currentHealthPoints;
+
+    public void Start()
+    {
+        currentHealthPoints = startingHealthPoints;
+    }
+
+
     public void Damage(int amount)
     {
-        healthPoints -= amount;
-        Debug.Log(gameObject.name + "'s health is now " + healthPoints);
-        if (healthPoints <= 0)
+        currentHealthPoints -= amount;
+        Debug.Log(gameObject.name + "'s health is now " + currentHealthPoints);
+        if (currentHealthPoints <= 0)
         {
             gameObject.SetActive(false);
+            currentHealthPoints = startingHealthPoints;
             
         }
     }
