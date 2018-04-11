@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: a12abbca9b0478846b120c14da3382e3
-timeCreated: 1519869814
+guid: 49192330b379b8241b30270970e00712
+timeCreated: 1523483446
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: asteroid_0
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -41,7 +40,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -89,85 +88,9 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: asteroid_0
-      rect:
-        serializedVersion: 2
-        x: 26
-        y: 27
-        width: 240
-        height: 240
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    outline:
-    - - {x: 113, y: -67}
-      - {x: 112, y: -50}
-      - {x: 114, y: -39}
-      - {x: 114, y: 14}
-      - {x: 106, y: 71}
-      - {x: 91, y: 121}
-      - {x: 86, y: 128}
-      - {x: 57, y: 140}
-      - {x: 18, y: 144}
-      - {x: -50, y: 144}
-      - {x: -87, y: 130}
-      - {x: -100, y: 89}
-      - {x: -104, y: 53}
-      - {x: -104, y: -91}
-      - {x: -100, y: -99}
-      - {x: -95, y: -107}
-      - {x: -29, y: -144}
-      - {x: 21, y: -144}
-      - {x: 53, y: -137}
-      - {x: 72, y: -125}
-      - {x: 86, y: -122}
-    physicsShape:
-    - - {x: 82, y: -114}
-      - {x: 96, y: -92}
-      - {x: 96, y: -79}
-      - {x: 108, y: -60}
-      - {x: 112, y: -38}
-      - {x: 112, y: 13}
-      - {x: 108, y: 20}
-      - {x: 106, y: 23}
-      - {x: 104, y: 60}
-      - {x: 99, y: 86}
-      - {x: 91, y: 113}
-      - {x: 86, y: 123}
-      - {x: 77, y: 129}
-      - {x: 55, y: 137}
-      - {x: 13, y: 139}
-      - {x: -4, y: 144}
-      - {x: -32, y: 144}
-      - {x: -39, y: 141}
-      - {x: -44, y: 138}
-      - {x: -67, y: 136}
-      - {x: -77, y: 131}
-      - {x: -88, y: 118}
-      - {x: -95, y: 94}
-      - {x: -97, y: 86}
-      - {x: -99, y: 40}
-      - {x: -103, y: 20}
-      - {x: -103, y: -15}
-      - {x: -101, y: -23}
-      - {x: -99, y: -49}
-      - {x: -101, y: -51}
-      - {x: -101, y: -87}
-      - {x: -97, y: -96}
-      - {x: -92, y: -103}
-      - {x: -68, y: -118}
-      - {x: -51, y: -128}
-      - {x: -41, y: -130}
-      - {x: -18, y: -143}
-      - {x: 11, y: -143}
-      - {x: 32, y: -137}
-      - {x: 55, y: -133}
-      - {x: 71, y: -123}
+    sprites: []
+    outline: []
+    physicsShape: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

@@ -7,9 +7,9 @@ public class Spawner : MonoBehaviour
     public int laneWidth = 7;
     public int offset = -1;
     public string enemySpawnString = "a1b2a1b3b1a2c1c2c3";
-	public GameObject Enemy0 = null;
-    public GameObject Enemy1 = null;
-    public GameObject Enemy2 = null;
+	public GameObject EnemyA = null;
+    public GameObject EnemyB = null;
+    public GameObject EnemyC = null;
     private System.CharEnumerator enemySpawnPattern;
     private string theMethod = "Spawn";
 	//------------------------------
@@ -29,16 +29,16 @@ public class Spawner : MonoBehaviour
             switch (enemySpawnPattern.Current)
             {
                 case 'a':
-                    ObjToSpawn = Enemy0;
+                    ObjToSpawn = EnemyA;
                     break;
                 case 'b':
-                    ObjToSpawn = Enemy1;
+                    ObjToSpawn = EnemyB;
                     break;
                 case 'c':
-                    ObjToSpawn = Enemy2;
+                    ObjToSpawn = EnemyC;
                     break;
                 default:
-                    ObjToSpawn = Enemy0;
+                    ObjToSpawn = EnemyA;
                     break;
             }
         }
@@ -68,7 +68,7 @@ public class Spawner : MonoBehaviour
             GameObject enemy = ObjectPooler.SharedInstance.GetPooledObject(ObjToSpawn.name);
             if (enemy != null)
             {
-                enemy.transform.position = new Vector3(-20, 0, spawnLane);
+                enemy.transform.position = new Vector3(-25, 0, spawnLane);
                 enemy.transform.rotation = transform.rotation;
                 enemy.SetActive(true);
             }

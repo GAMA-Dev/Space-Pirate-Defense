@@ -3,16 +3,18 @@
 using UnityEngine;
 using System.Collections;
 //------------------------------
-public class Mover : MonoBehaviour
+public class MoveForward : MonoBehaviour, IMovement
 {
     //------------------------------
     public float MaxSpeed = 1f;
-    //------------------------------
 
-    //------------------------------
-    // Update is called once per frame
-    void Update()
+    public void Move()
     {
         transform.position += transform.forward * Time.deltaTime * MaxSpeed;
+    }
+
+    void Update()
+    {
+        Move();
     }
 }

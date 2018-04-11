@@ -205,7 +205,7 @@ MonoBehaviour:
   reloading: 0
   AmmoName: Laser
   offset: {x: 0, y: 0, z: 4}
-  SoundEffects: {fileID: 0}
+  SoundEffectsManager: {fileID: 0}
   soundName: single_zap_Lazer
 --- !u!114 &114828382075348562
 MonoBehaviour:

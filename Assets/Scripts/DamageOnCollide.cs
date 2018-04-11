@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class DamageOnCollide : MonoBehaviour {
 
-    public List<string> colliders;
+    public List<string> CollideWithTags;
     public int damageAmount;
     private Health health;
     private void OnTriggerEnter(Collider other)
     {
-        if (colliders.Contains(other.tag))
+        if (CollideWithTags.Contains(other.tag))
         {
             health = other.GetComponent<Health>();
             if (health != null)

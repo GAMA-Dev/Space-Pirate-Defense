@@ -116,8 +116,8 @@ public class HealthBar : MonoBehaviour
 
 
 
-        Debug.Log("Calculating lifebar for gameObject: " + WhoseHealthExactly.GetInstanceID() + ", with health: " + HealthRef.currentHealthPoints);
-        Debug.Log("New scale: " + newScaleFactor.y);
+        //Debug.Log("Calculating lifebar for gameObject: " + WhoseHealthExactly.GetInstanceID() + ", with health: " + HealthRef.currentHealthPoints);
+        //Debug.Log("New scale: " + newScaleFactor.y);
 
         GreenBarTransform.localScale = new Vector3(newScaleFactor.x, newScaleFactor.y, newScaleFactor.z);
 

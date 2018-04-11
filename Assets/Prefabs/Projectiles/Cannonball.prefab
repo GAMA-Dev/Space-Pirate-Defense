@@ -85,7 +85,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cc6161d929740744801a9e509f06f49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colliders:
+  CollideWithTags:
   - Enemy
   damageAmount: 50
 --- !u!114 &114653764175996532

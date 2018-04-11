@@ -8,10 +8,13 @@ public class Fire : MonoBehaviour {
     public bool reloading = false;
     public string AmmoName;
     public Vector3 offset;
-    public SoundEffects SoundEffects;
+    public SoundEffectsManager SoundEffectsManager;
     public string soundName;
 
-
+    private void Start()
+    {
+        SoundEffectsManager = SoundEffectsManager.instance;
+    }
     //reload is called by the public canFire method after reloadTime is up, essentially when object is done reloading
     private void reload()
     {
@@ -49,7 +52,7 @@ public class Fire : MonoBehaviour {
 
             bullet.transform.rotation = transform.rotation;
             bullet.SetActive(true);
-            SoundEffects.playSoundEffect(soundName);
+            SoundEffectsManager.instance.playSoundEffect(soundName);
         }
     }
 
