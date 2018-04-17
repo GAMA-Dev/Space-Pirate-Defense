@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 42545357}
   - component: {fileID: 42545355}
   - component: {fileID: 42545359}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cannon2
   m_TagString: Cannon
   m_Icon: {fileID: 0}
@@ -195,7 +195,7 @@ GameObject:
   - component: {fileID: 97343304}
   - component: {fileID: 97343305}
   - component: {fileID: 97343306}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Turret Placement (7)
   m_TagString: Turret Placement
   m_Icon: {fileID: 0}
@@ -322,7 +322,7 @@ GameObject:
   - component: {fileID: 145163966}
   - component: {fileID: 145163967}
   - component: {fileID: 145163968}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Turret Placement (12)
   m_TagString: Turret Placement
   m_Icon: {fileID: 0}
@@ -450,7 +450,7 @@ GameObject:
   - component: {fileID: 187356399}
   - component: {fileID: 187356397}
   - component: {fileID: 187356401}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cannon3
   m_TagString: Cannon
   m_Icon: {fileID: 0}
@@ -521,7 +521,7 @@ GameObject:
   - component: {fileID: 289594994}
   - component: {fileID: 289594995}
   - component: {fileID: 289594996}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Turret Placement (11)
   m_TagString: Turret Placement
   m_Icon: {fileID: 0}
@@ -575,7 +575,7 @@ GameObject:
   - component: {fileID: 348130554}
   - component: {fileID: 348130555}
   - component: {fileID: 348130556}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Turret Placement (1)
   m_TagString: Turret Placement
   m_Icon: {fileID: 0}
@@ -629,7 +629,7 @@ GameObject:
   - component: {fileID: 350433943}
   - component: {fileID: 350433944}
   - component: {fileID: 350433945}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Turret Placement (14)
   m_TagString: Turret Placement
   m_Icon: {fileID: 0}
@@ -1113,7 +1113,7 @@ GameObject:
   - component: {fileID: 722106570}
   - component: {fileID: 722106571}
   - component: {fileID: 722106572}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Turret Placement (4)
   m_TagString: Turret Placement
   m_Icon: {fileID: 0}
@@ -1312,7 +1312,7 @@ GameObject:
   m_Component:
   - component: {fileID: 943107373}
   - component: {fileID: 943107374}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1459,7 +1459,7 @@ GameObject:
   - component: {fileID: 1038896916}
   - component: {fileID: 1038896917}
   - component: {fileID: 1038896918}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Turret Placement (2)
   m_TagString: Turret Placement
   m_Icon: {fileID: 0}
@@ -1513,7 +1513,7 @@ GameObject:
   - component: {fileID: 1050494705}
   - component: {fileID: 1050494706}
   - component: {fileID: 1050494707}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Turret Placement (3)
   m_TagString: Turret Placement
   m_Icon: {fileID: 0}
@@ -1676,7 +1676,7 @@ GameObject:
   - component: {fileID: 1159213285}
   - component: {fileID: 1159213284}
   - component: {fileID: 1159213286}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Turret Placement
   m_TagString: Turret Placement
   m_Icon: {fileID: 0}
@@ -2041,7 +2041,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1279590058}
   - component: {fileID: 1279590059}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2563,7 +2563,7 @@ GameObject:
   - component: {fileID: 1488973518}
   - component: {fileID: 1488973519}
   - component: {fileID: 1488973520}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Turret Placement (9)
   m_TagString: Turret Placement
   m_Icon: {fileID: 0}
@@ -2617,7 +2617,7 @@ GameObject:
   - component: {fileID: 1528034671}
   - component: {fileID: 1528034672}
   - component: {fileID: 1528034673}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Turret Placement (10)
   m_TagString: Turret Placement
   m_Icon: {fileID: 0}
@@ -2671,7 +2671,7 @@ GameObject:
   - component: {fileID: 1532632021}
   - component: {fileID: 1532632022}
   - component: {fileID: 1532632023}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Turret Placement (5)
   m_TagString: Turret Placement
   m_Icon: {fileID: 0}
@@ -2725,7 +2725,7 @@ GameObject:
   - component: {fileID: 1594942492}
   - component: {fileID: 1594942493}
   - component: {fileID: 1594942494}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Turret Placement (13)
   m_TagString: Turret Placement
   m_Icon: {fileID: 0}
@@ -2779,7 +2779,7 @@ GameObject:
   - component: {fileID: 1601713614}
   - component: {fileID: 1601713615}
   - component: {fileID: 1601713616}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Turret Placement (6)
   m_TagString: Turret Placement
   m_Icon: {fileID: 0}
@@ -3124,7 +3124,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1701218521}
   - component: {fileID: 1701218522}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3271,7 +3271,7 @@ GameObject:
   - component: {fileID: 1757699392}
   - component: {fileID: 1757699393}
   - component: {fileID: 1757699394}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Turret Placement (8)
   m_TagString: Turret Placement
   m_Icon: {fileID: 0}
@@ -3523,7 +3523,7 @@ GameObject:
   - component: {fileID: 2056200169}
   - component: {fileID: 2056200168}
   - component: {fileID: 2056200171}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cannon1
   m_TagString: Cannon
   m_Icon: {fileID: 0}

@@ -77,7 +77,7 @@ public class BuildManager : MonoBehaviour {
                 Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
 
                 RaycastHit raycastHit;
-                if (Physics.Raycast(ray, out raycastHit))
+                if (Physics.Raycast(ray, out raycastHit, Mathf.Infinity, LayerMask.GetMask("Turret Placement")))
                 {
                     TurretPlacement touchedPlacement = raycastHit.collider.gameObject.GetComponent<TurretPlacement>();
                     if (selectedTurret != null && buildablePlacements.Contains(touchedPlacement))
