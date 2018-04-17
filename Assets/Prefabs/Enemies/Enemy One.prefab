@@ -75,6 +75,8 @@ GameObject:
   - component: {fileID: 114531762419332274}
   - component: {fileID: 114757539875607530}
   - component: {fileID: 114884660377027550}
+  - component: {fileID: 114480733925338852}
+  - component: {fileID: 114005657498304028}
   m_Layer: 0
   m_Name: Enemy One
   m_TagString: Enemy
@@ -282,6 +284,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114005657498304028
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1521587055924198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726a74567bc451e4ebc61878972c1f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropPrefab: {fileID: 1130524708631774, guid: 107d8b3aa4def4a408772171951ba55f, type: 2}
+  amount: 10
+  dropChance: 100
 --- !u!114 &114248785919938908
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -306,6 +322,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WhoseHealthExactly: {fileID: 0}
+--- !u!114 &114480733925338852
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1521587055924198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726a74567bc451e4ebc61878972c1f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropPrefab: {fileID: 1130524708631774, guid: 82b92485486c58b4aadd0c3775cfb585, type: 2}
+  amount: 1
+  dropChance: 50
 --- !u!114 &114531762419332274
 MonoBehaviour:
   m_ObjectHideFlags: 1

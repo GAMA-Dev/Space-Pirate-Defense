@@ -16,7 +16,12 @@ public class DamageOnCollide : MonoBehaviour {
             {
                 health.Damage(damageAmount);
             }
-            gameObject.SetActive(false);
+            if (gameObject.GetComponent<IDeathMethod>() != null) {
+                gameObject.GetComponent<IDeathMethod>().Die();
+            }
+            else {
+                gameObject.SetActive(false);
+            }
         }
     }
 }

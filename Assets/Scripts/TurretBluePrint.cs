@@ -7,14 +7,16 @@ public class TurretBluePrint : ScriptableObject{
 
     public GameObject[] levelPrefabs;
 
-    public GameObject buildMaterial;
+    public string buildMaterial;
 
-    public int cost;
+    public int materialCost;
+
+    public int currencyCost;
 
     public Sprite buildSprite;
 
     public int GetMaterialDropAmount()
     {
-        return cost / 2;
+        return currencyCost / 2;
     }
 }

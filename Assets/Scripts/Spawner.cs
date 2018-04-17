@@ -7,9 +7,9 @@ public class Spawner : MonoBehaviour
     public int laneWidth = 7;
     public int offset = -1;
     public string enemySpawnString = "a1b2a1b3b1a2c1c2c3";
-	public GameObject EnemyA = null;
-    public GameObject EnemyB = null;
-    public GameObject EnemyC = null;
+	public GameObject EnemyA;
+    public GameObject EnemyB;
+    public GameObject EnemyC;
     private System.CharEnumerator enemySpawnPattern;
     private string theMethod = "Spawn";
 	//------------------------------

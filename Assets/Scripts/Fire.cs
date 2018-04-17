@@ -8,13 +8,9 @@ public class Fire : MonoBehaviour {
     public bool reloading = false;
     public string AmmoName;
     public Vector3 offset;
-    public SoundEffectsManager SoundEffectsManager;
     public string soundName;
 
-    private void Start()
-    {
-        SoundEffectsManager = SoundEffectsManager.instance;
-    }
+
     //reload is called by the public canFire method after reloadTime is up, essentially when object is done reloading
     private void reload()
     {

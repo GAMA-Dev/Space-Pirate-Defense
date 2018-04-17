@@ -32,9 +32,13 @@ public class BuildManager : MonoBehaviour {
 
     public void SelectTurretToBuild(TurretBluePrint turret)
     {
-        selectedTurret = turret;
-        UpdateBuildablePlacements();
-        ShowBuildablePlacements();
+        if (CurrencyTracker.instance.CanAfford(turret.buildMaterial, turret.materialCost) && CurrencyTracker.instance.CanAfford("Currency", turret.currencyCost)) {
+            selectedTurret = turret;
+            UpdateBuildablePlacements();
+            ShowBuildablePlacements();
+            //TODO:switch build button to cancel button
+        }
+        //TODO:show message saying not enough money/materials
     }
 
     public void UpdateBuildablePlacements()
@@ -44,7 +48,7 @@ public class BuildManager : MonoBehaviour {
         {
             if (!placement.HasTurret)
             {
-                Debug.Log(placement.name + " has been added to buildable placements");
+                //Debug.Log(placement.name + " has been added to buildable placements");
                 buildablePlacements.Add(placement);
             }
         }
@@ -83,6 +87,8 @@ public class BuildManager : MonoBehaviour {
                     if (selectedTurret != null && buildablePlacements.Contains(touchedPlacement))
                     {
                         Debug.Log(gameObject.name + " clicked");
+                        CurrencyTracker.instance.Buy(selectedTurret.buildMaterial, selectedTurret.materialCost);
+                        CurrencyTracker.instance.Buy("Currency", selectedTurret.currencyCost);
                         BuildTurret(touchedPlacement);
                         selectedTurret = null;
                         foreach (TurretPlacement placement in buildablePlacements)
