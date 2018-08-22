@@ -19,6 +19,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4143632992535784}
+  - component: {fileID: 95428717088348476}
+  - component: {fileID: 114396001462527740}
+  - component: {fileID: 114972891145049906}
   m_Layer: 0
   m_Name: Explosive
   m_TagString: Untagged
@@ -35,7 +38,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4736611108574002}
   - component: {fileID: 212758169756747820}
-  - component: {fileID: 95269032790885332}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -70,16 +72,16 @@ Transform:
   m_Father: {fileID: 4143632992535784}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!95 &95269032790885332
+--- !u!95 &95428717088348476
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1237512388923976}
+  m_GameObject: {fileID: 1130524708631774}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 30d9bbbdc0bc9184f83777ca2567baca, type: 2}
+  m_Controller: {fileID: 9100000, guid: f0f24f3b8b0192945a29c051867507aa, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -87,6 +89,31 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114396001462527740
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1130524708631774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fdce9eca892ea34bbe2052c23be1e40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114972891145049906
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1130524708631774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c67e608b19af343967458804f27dfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startLerp: 0
+  targetTag: Explosive Image
+  smoothfactor: 5
 --- !u!212 &212758169756747820
 SpriteRenderer:
   m_ObjectHideFlags: 1

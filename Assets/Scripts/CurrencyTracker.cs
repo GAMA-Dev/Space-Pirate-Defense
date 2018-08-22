@@ -27,7 +27,7 @@ public class CurrencyTracker : MonoBehaviour
     }
 
     public int GetValue(string key) {
-        if (MaterialsDict.ContainsKey("key")) {
+        if (MaterialsDict.ContainsKey(key)) {
             return MaterialsDict[key];
         }
         return 0;

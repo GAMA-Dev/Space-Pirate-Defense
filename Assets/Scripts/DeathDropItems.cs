@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DeathSetInactive : MonoBehaviour, IDeathMethod {
+public class DeathDropItems : MonoBehaviour, IDeathMethod {
 
     public void Die()
     {
@@ -16,7 +16,8 @@ public class DeathSetInactive : MonoBehaviour, IDeathMethod {
         if (drops != null) {
             for (int i = 0; i < drops.Length; i++) {
                 if (drops[i].Dropped()) {
-                    Instantiate(drops[i].dropPrefab, transform.position + new Vector3(i, 0, 0), Quaternion.identity);
+                    GameObject newdrop = Instantiate(drops[i].dropPrefab, transform.position + new Vector3(i, 0, 0), Quaternion.identity);
+                    newdrop.GetComponent<Value>().Init(drops[i].amount);
                 }
             }
         }

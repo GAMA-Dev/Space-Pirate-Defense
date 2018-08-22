@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BuildManager : MonoBehaviour {
 
     public static BuildManager instance;
     private TurretBluePrint selectedTurret;
+    public Text DebugText;
     private List<TurretPlacement> turretPlacements = new List<TurretPlacement>();
     private List<TurretPlacement> buildablePlacements = new List<TurretPlacement>();
 
@@ -38,7 +40,7 @@ public class BuildManager : MonoBehaviour {
             ShowBuildablePlacements();
             //TODO:switch build button to cancel button
         }
-        //TODO:show message saying not enough money/materials
+        DebugText.gameObject.SetActive(true);
     }
 
     public void UpdateBuildablePlacements()

@@ -7,6 +7,7 @@ public class Spawner : MonoBehaviour
     public int laneWidth = 7;
     public int offset = -1;
     public string enemySpawnString = "a1b2a1b3b1a2c1c2c3";
+    public bool doneSpawning = false;
 	public GameObject EnemyA;
     public GameObject EnemyB;
     public GameObject EnemyC;
@@ -76,6 +77,7 @@ public class Spawner : MonoBehaviour
         else
         {
             CancelInvoke(theMethod);
+            doneSpawning = true;
         }
 
 

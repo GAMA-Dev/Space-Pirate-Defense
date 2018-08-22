@@ -9,6 +9,12 @@ TagManager:
   - Turret
   - Projectile
   - Turret Placement
+  - Currency Image
+  - Energy Image
+  - Explosive Image
+  - Pierce Image
+  - Poison Image
+  - Spread Image
   layers:
   - Default
   - TransparentFX

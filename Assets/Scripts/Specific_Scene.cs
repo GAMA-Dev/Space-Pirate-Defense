@@ -6,17 +6,10 @@ using UnityEngine.UI;
 
 public class Specific_Scene : MonoBehaviour {
     public string Desired_Level;
-    public Button PushButton;
 
-    void Start()
-    {
-        Button btn = PushButton.GetComponent<Button>();
-        btn.onClick.AddListener(TaskOnClick);
-    }
-
-    void TaskOnClick()
+    public void TaskOnClick()
     {
     //Desired_Level is specified in the editor
-        SceneManager.GetSceneByName(Desired_Level);
+        SceneManager.LoadScene(Desired_Level);
     }
 }

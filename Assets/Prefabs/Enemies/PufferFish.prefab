@@ -28,7 +28,7 @@ GameObject:
   - component: {fileID: 114220218892986256}
   - component: {fileID: 114136042897563298}
   m_Layer: 0
-  m_Name: RocketSquid
+  m_Name: PufferFish
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -301,7 +301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropPrefab: {fileID: 1130524708631774, guid: 107d8b3aa4def4a408772171951ba55f, type: 2}
-  amount: 40
+  amount: 30
   dropChance: 100
 --- !u!114 &114220218892986256
 MonoBehaviour:
@@ -354,7 +354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cbe929c79da7fe4ca05a253987d9252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealthPoints: 200
+  startingHealthPoints: 100
   currentHealthPoints: 0
 --- !u!136 &136316567766975858
 CapsuleCollider:
@@ -366,9 +366,9 @@ CapsuleCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 1.1224294
-  m_Height: 8.518894
+  m_Height: 2.2448587
   m_Direction: 2
-  m_Center: {x: -0.011639595, y: 0, z: 0.04572153}
+  m_Center: {x: -0.011639595, y: 0, z: 0.12639618}
 --- !u!212 &212169850733097908
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -403,7 +403,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 49192330b379b8241b30270970e00712, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1d1a07a36aa4665419025aaed4238f42, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
